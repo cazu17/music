@@ -1,0 +1,32 @@
+# Copiar este archivo como ".env" (sin .example) y completar los valores reales.
+# El archivo ".env" NUNCA debe subirse a un repositorio ni compartirse por chat/correo.
+
+# ── Excel de entrada ────────────────────────────────────────────
+EXCEL_FILE=Creación de Cuenta INTRANET.xlsx
+
+# ── Intranet (login del formulario 10GUS2) ─────────────────────
+INTRANET_USER=EVALENZUELAG
+INTRANET_PASSWORD=@PF.alimentos.2026
+
+URL_LOGIN=http://intranet:8001/portal/
+URL_REDIR=http://intranet:8001/portal/redirITRv2.php?url=http://intranet/v2/homepage.asp
+URL_FORMULARIO=http://intranet/v2/_Informes/0602_Usuarios/10GUS2_Ingresar_usuario.asp
+
+# Clave inicial que se asigna a los usuarios nuevos
+CLAVE_USUARIO_DEFAULT=PF1903
+
+EMPSA_VALUE=1
+WAIT_TIMEOUT=15
+MAX_LOGIN_LEN=20
+
+# ── Oracle (validación previa de RUT / login existentes) ───────
+# DSN en formato Easy Connect, ej: host:puerto/servicio (ver ejemplos internos: pf5010:1533/PFPROD19C)
+ORACLE_USER=WEB
+ORACLE_PASSWORD=web
+ORACLE_DSN=
+ORACLE_TABLE=WEBUSUARIO
+ORACLE_COL_RUT=RUT_USUARIO
+ORACLE_COL_LOGIN=USULOGIN
+
+# ── Carpeta donde se guardan logs y el reporte CSV final ────────
+REPORT_DIR=./reportes
